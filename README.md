@@ -18,7 +18,7 @@ ECT-CLIP is a resource-efficient vision-language pretraining framework for 3D ch
 ## 🔥 News
 
 - **[2026.08]** Our paper has been accepted to **EMNLP 2026**! 🎉
-- **[2026.08]** Code is released. Model checkpoints and pre-computed offline data will be released soon.
+- **[2026.08]** Code is released.
 
 ## 🛠️ Installation
 
