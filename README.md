@@ -47,7 +47,7 @@ ECT-CLIP is trained and evaluated on [CT-RATE](https://huggingface.co/datasets/i
 
 ### 2. Offline-stage data
 
-All text-side artifacts are pre-computed offline. Please download the `offline_stage_data/` folder from [Baidu Netdisk](https://pan.baidu.com/s/xxxxxxxx) and place it in the root of this repository.
+All text-side artifacts are pre-computed offline. Please download the `offline_stage_data/` folder from [Baidu Netdisk](https://pan.baidu.com/s/1PpTiIzxXqOI3TQf-Mi3wfg?pwd=bnzw) and place it in the root of this repository.
 
 ## 📁 Repository Structure
 
