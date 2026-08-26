@@ -124,5 +124,5 @@ if __name__ == "__main__":
         "epochs": 5,
         "accumulation_steps": 4,
     }
-    config["save_dir"] = "./hard_checkpoints"
+    config["save_dir"] = "./checkpoints"
     run_supervised_training(config)
