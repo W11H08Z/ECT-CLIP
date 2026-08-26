@@ -49,6 +49,18 @@ ECT-CLIP is trained and evaluated on [CT-RATE](https://huggingface.co/datasets/i
 
 All text-side artifacts are pre-computed offline. Please download the `offline_stage_data/` folder from [Baidu Netdisk](https://pan.baidu.com/s/xxxxxxxx) and place it in the root of this repository.
 
+## 📁 Repository Structure
+
+```
+ECT-CLIP/
+├── models/ectclip.py            # ECTCLIP model (3D ResNet-18 + cross-attention) and SigLIP loss
+├── datasets/training_dataset.py # CT-RATE dataset with random / hard negative sampling
+├── train_ectclip.py             # Training script
+├── eval_ectclip.py              # Zero-shot evaluation on CT-RATE
+├── calc_metrics.py              # Metric computation (AUC, ACC, Spec, Sens, F1, Prec)
+└── offline_stage_data/          # Pre-computed text-side artifacts
+```
+
 ## 🚀 Training
 
 Edit the config at the bottom of `train_ectclip.py` (mainly `data_folder` and `labels_csv`), then run:
@@ -84,18 +96,6 @@ python calc_metrics.py \
 
 Replace `ctrate_prompt_version_0.csv` with any of the per-prompt prediction files, or average the probabilities across prompts beforehand for the prompt-ensembled result.
 
-## 📁 Repository Structure
-
-```
-ECT-CLIP/
-├── models/ectclip.py            # ECTCLIP model (3D ResNet-18 + cross-attention) and SigLIP loss
-├── datasets/training_dataset.py # CT-RATE dataset with random / hard negative sampling
-├── train_ectclip.py             # Training script
-├── eval_ectclip.py              # Zero-shot evaluation on CT-RATE
-├── calc_metrics.py              # Metric computation (AUC, ACC, Spec, Sens, F1, Prec)
-└── offline_stage_data/          # Pre-computed text-side artifacts
-```
-
 ## 🙏 Acknowledgements
 
 We thank the authors of the [CT-RATE](https://huggingface.co/datasets/ibrahimhamamci/CT-RATE) dataset, and the authors of [CXR-BERT](https://huggingface.co/microsoft/BiomedVLP-CXR-BERT-specialized), [BioLORD](https://huggingface.co/FremyCompany/BioLORD-2023), [RadBERT](https://huggingface.co/zzxslp/RadBERT-RoBERTa-4m) and [MedCLIP](https://github.com/RyanWangZf/MedCLIP) for releasing their text encoders. This work was supported by the National Natural Science Foundation of China (U22B2061), the National Key R\&D Program of China (2022YFB4300603), and Natural Science Foundation of Sichuan, China (2026NSFSC0429).
@@ -103,11 +103,10 @@ We thank the authors of the [CT-RATE](https://huggingface.co/datasets/ibrahimham
 ## ✍️ Citation
 
 If you find this work useful, please consider citing:
-
 ```bibtex
 @inproceedings{ectclip2026,
   title     = {ECT-CLIP: Resource-Efficient CT Vision-Language Pretraining via Negative Scaling},
-  author    = {Anonymous},
+  author    = {Hanwen Zhang, Yao Liu, Jiaye Yang, Die Dai, Qiao Liu, Yutong Xie, Peng Wang },
   booktitle = {Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
   year      = {2026}
 }
