@@ -108,16 +108,13 @@ if __name__ == "__main__":
         # The files below default to the copies shipped in offline_stage_data/;
         # override here only if needed.
         "itemized_text_json": "./offline_stage_data/Itemized_medical_reports.json",
-        "sent_entities_json": "./offline_stage_data/sent_entities_deepseek.json",
-        "anatomy_entity_links_json": "./offline_stage_data/anatomy_entity_links.json",
-        "clinical_phenomenon_entity_links_json": "./offline_stage_data/clinical_phenomenon_entity_links.json",
         "sent2embeddings_path_list": [
             "./offline_stage_data/CXR_sent2embedding.pt",
             "./offline_stage_data/BioLORD_sent2embedding.pt",
             "./offline_stage_data/RadBERT_sent2embedding.pt"
         ],
         "text_feat_cnt": 512,
-        "negative_sampling": "hard",  # or "hard" for hard negative sampling
+        "negative_sampling": "random",  # or "hard" for hard negative sampling
         "batch_size": 1,
         "num_workers": 16,
 
