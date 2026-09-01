@@ -98,7 +98,7 @@ Replace `ctrate_prompt_version_0.csv` with any of the per-prompt prediction file
 
 ## 🙏 Acknowledgements
 
-We thank the authors of the [CT-RATE](https://huggingface.co/datasets/ibrahimhamamci/CT-RATE) dataset, and the authors of [CXR-BERT](https://huggingface.co/microsoft/BiomedVLP-CXR-BERT-specialized), [BioLORD](https://huggingface.co/FremyCompany/BioLORD-2023), [RadBERT](https://huggingface.co/zzxslp/RadBERT-RoBERTa-4m) and [MedCLIP](https://github.com/RyanWangZf/MedCLIP) for releasing their text encoders. This work was supported by the National Natural Science Foundation of China (U22B2061), the National Key R\&D Program of China (2022YFB4300603), and Natural Science Foundation of Sichuan, China (2026NSFSC0429).
+We thank the authors of the [CT-RATE](https://huggingface.co/datasets/ibrahimhamamci/CT-RATE) dataset, and the authors of [CXR-BERT](https://huggingface.co/microsoft/BiomedVLP-CXR-BERT-specialized), [BioLORD](https://huggingface.co/FremyCompany/BioLORD-2023), [RadBERT](https://huggingface.co/zzxslp/RadBERT-RoBERTa-4m) and [MedCLIP](https://github.com/RyanWangZf/MedCLIP) for releasing their text encoders.
 
 ## ✍️ Citation
 
