@@ -2,7 +2,7 @@
 
 <p align="left">
   <a href="https://2026.emnlp.org/"><img src="https://img.shields.io/badge/EMNLP-2026-blue.svg" alt="EMNLP 2026"></a>
-  <a href="#citation"><img src="https://img.shields.io/badge/Paper-Coming%20Soon-green.svg" alt="Paper"></a>
+  <a href="https://aclanthology.org/2026.emnlp-main.991.pdf"><img src="https://img.shields.io/badge/Paper-PDF-red.svg" alt="Paper"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-yellow.svg" alt="License"></a>
 </p>
 
